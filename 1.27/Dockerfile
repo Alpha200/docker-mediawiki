@@ -19,7 +19,7 @@ RUN docker-php-ext-install mysqli opcache
 
 RUN set -x; \
     apt-get update \
-    && apt-get install -y --no-install-recommends imagemagick \
+    && apt-get install -y --no-install-recommends imagemagick git \
     && rm -rf /var/lib/apt/lists/*
 
 RUN a2enmod rewrite
